@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FCFCFC"
+    tools:context=".AboutYourselfActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toTopOf="@+id/btnCompleteContainer"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <!-- Top row: Back button -->
+            <ImageView
+                android:id="@+id/ivBack"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_marginBottom="24dp"
+                android:src="@drawable/ic_arrow_back" />
+
+            <!-- Header section -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <!-- Progress Ring -->
+                <RelativeLayout
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginEnd="16dp">
+
+                    <ProgressBar
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:indeterminate="false"
+                        android:max="5"
+                        android:progress="5"
+                        android:progressTint="#9C0000"
+                        android:progressDrawable="@android:drawable/progress_horizontal" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="5 of 5"
+                        android:textColor="#000000"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <!-- Titles -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Prev. Step: Professional Details"
+                        android:textColor="#8B0000"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:text="About Yourself"
+                        android:textColor="#000000"
+                        android:textSize="22sp"
+                        android:textStyle="normal" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginStart="-24dp"
+                android:layout_marginEnd="-24dp"
+                android:layout_marginBottom="24dp"
+                android:background="#EEEEEE" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:text="Please provide your about yourself:"
+                android:textColor="#333333"
+                android:textSize="18sp"
+                android:textStyle="normal" />
+
+            <!-- About Yourself Field -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="About Yourself:"
+                android:textColor="#808080"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/etAboutYourself"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="24dp"
+                android:background="@drawable/bg_input_box"
+                android:gravity="top|start"
+                android:text="No"
+                android:inputType="textMultiLine"
+                android:padding="16dp"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <!-- Upload Image Section -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Upload Image (Min. 3 images):"
+                android:textColor="#808080"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:id="@+id/llUploadContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="24dp"
+                android:background="@drawable/bg_dashed_border"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="32dp">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/ic_upload" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:text="Drag &amp; Drop files here"
+                    android:textColor="#808080"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="12dp"
+                    android:text="(or)"
+                    android:textColor="#808080"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:id="@+id/btnBrowse"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:minWidth="140dp"
+                    android:backgroundTint="#8B0000"
+                    android:text="Browse"
+                    android:textAllCaps="false"
+                    android:textColor="#FFFFFF" />
+
+            </LinearLayout>
+            
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="24dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Bottom Action Button Container -->
+    <LinearLayout
+        android:id="@+id/btnCompleteContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FCFCFC"
+        android:padding="24dp"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <Button
+            android:id="@+id/btnCompleteRegistration"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:backgroundTint="#8B0000"
+            android:text="Complete Registration"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
