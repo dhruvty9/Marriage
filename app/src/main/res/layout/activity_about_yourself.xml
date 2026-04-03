@@ -2,6 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FCFCFC"
@@ -110,7 +111,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="About Yourself:"
-                android:textColor="#808080"
+                android:textColor="#333333"
+                android:textStyle="bold"
                 android:textSize="14sp" />
 
             <EditText
@@ -132,7 +134,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Upload Image (Min. 3 images):"
-                android:textColor="#808080"
+                android:textColor="#333333"
+                android:textStyle="bold"
                 android:textSize="14sp" />
 
             <LinearLayout
@@ -147,9 +150,11 @@
                 android:padding="32dp">
 
                 <ImageView
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:src="@drawable/ic_upload" />
+                    android:id="@+id/ivProfilePreview"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/ic_upload"
+                    android:scaleType="centerCrop" />
 
                 <TextView
                     android:layout_width="wrap_content"

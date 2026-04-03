@@ -12,7 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Marriage">
         <activity
-            android:name=".MainActivity"
+            android:name=".BasicActivity"
             android:exported="false">
         </activity>
         <activity
@@ -31,6 +31,13 @@
             android:exported="false" />
         <activity android:name=".AboutYourselfActivity"
             android:exported="false" />
+
+        <activity android:name=".ReligionDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ProfessionalDetailsActivity"
+            android:exported="false" />
+
     </application>
 
 </manifest>
