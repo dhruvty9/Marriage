@@ -59,8 +59,9 @@ class AboutYourselfActivity : AppCompatActivity() {
             if (etAbout.text.toString().isEmpty()) {
                 etAbout.error = "Please write something about yourself"
             } else {
-                Toast.makeText(this, "Profile Completed Successfully!", Toast.LENGTH_LONG).show()
-                // Navigate to Dashboard...
+                val intent = android.content.Intent(this, RegisterSuccessActivity::class.java)
+                intent.flags = android.content.Intent.FLAG_ACTIVITY_NEW_TASK or android.content.Intent.FLAG_ACTIVITY_CLEAR_TASK
+                startActivity(intent)
             }
         }
     }
