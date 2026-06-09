@@ -66,7 +66,7 @@
                 android:background="?attr/selectableItemBackgroundBorderless"
                 android:contentDescription="Notifications"
                 android:src="@drawable/ic_notifications"
-                android:tint="#FFFFFF" />
+                app:tint="#FFFFFF" />
         </LinearLayout>
 
         <!-- Subtitle -->
@@ -173,7 +173,7 @@
                 android:layout_marginEnd="8dp"
                 android:contentDescription="Search"
                 android:src="@drawable/ic_person_placeholder"
-                android:tint="#9E9E9E" />
+                app:tint="#9E9E9E" />
 
             <EditText
                 android:id="@+id/etSearch"
@@ -258,7 +258,7 @@
                                 android:layout_height="match_parent"
                                 android:scaleType="centerCrop"
                                 android:src="@drawable/ic_person_placeholder"
-                                android:tint="#CCCCCC"
+                                app:tint="#CCCCCC"
                                 android:contentDescription="Match" />
 
                             <LinearLayout
@@ -306,7 +306,7 @@
                                 android:layout_height="match_parent"
                                 android:scaleType="centerCrop"
                                 android:src="@drawable/ic_person_placeholder"
-                                android:tint="#CCCCCC"
+                                app:tint="#CCCCCC"
                                 android:contentDescription="Match" />
 
                             <LinearLayout
@@ -354,7 +354,7 @@
                                 android:layout_height="match_parent"
                                 android:scaleType="centerCrop"
                                 android:src="@drawable/ic_person_placeholder"
-                                android:tint="#CCCCCC"
+                                app:tint="#CCCCCC"
                                 android:contentDescription="Match" />
 
                             <LinearLayout
@@ -443,7 +443,7 @@
                                 android:layout_height="match_parent"
                                 android:scaleType="centerCrop"
                                 android:src="@drawable/ic_person_placeholder"
-                                android:tint="#CCCCCC"
+                                app:tint="#CCCCCC"
                                 android:contentDescription="Nearby match" />
 
                             <LinearLayout
@@ -490,7 +490,7 @@
                                 android:layout_height="match_parent"
                                 android:scaleType="centerCrop"
                                 android:src="@drawable/ic_person_placeholder"
-                                android:tint="#CCCCCC"
+                                app:tint="#CCCCCC"
                                 android:contentDescription="Nearby match" />
 
                             <LinearLayout
@@ -545,7 +545,7 @@
                 android:layout_width="22dp"
                 android:layout_height="22dp"
                 android:src="@drawable/ic_login"
-                android:tint="#FFFFFF"
+                app:tint="#FFFFFF"
                 android:contentDescription="Home" />
 
             <TextView
@@ -569,7 +569,7 @@
                 android:layout_width="22dp"
                 android:layout_height="22dp"
                 android:src="@drawable/ic_person_placeholder"
-                android:tint="#FFCCCC"
+                app:tint="#FFCCCC"
                 android:contentDescription="Matches" />
 
             <TextView
@@ -592,7 +592,7 @@
                 android:layout_width="22dp"
                 android:layout_height="22dp"
                 android:src="@drawable/ic_support"
-                android:tint="#FFCCCC"
+                app:tint="#FFCCCC"
                 android:contentDescription="Chat" />
 
             <TextView
@@ -615,7 +615,7 @@
                 android:layout_width="22dp"
                 android:layout_height="22dp"
                 android:src="@drawable/ic_person_placeholder"
-                android:tint="#FFCCCC"
+                app:tint="#FFCCCC"
                 android:contentDescription="Profile" />
 
             <TextView

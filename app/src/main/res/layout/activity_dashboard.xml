@@ -31,7 +31,7 @@
                 android:background="?attr/selectableItemBackgroundBorderless"
                 android:contentDescription="Menu"
                 android:src="@drawable/ic_menu"
-                android:tint="#333333" />
+                app:tint="#333333" />
 
             <Space
                 android:layout_width="0dp"
@@ -47,7 +47,7 @@
                 android:background="?attr/selectableItemBackgroundBorderless"
                 android:contentDescription="Dark Mode"
                 android:src="@drawable/ic_dark_mode"
-                android:tint="#555555" />
+                app:tint="#555555" />
 
             <!-- Add -->
             <ImageButton
@@ -58,7 +58,7 @@
                 android:background="?attr/selectableItemBackgroundBorderless"
                 android:contentDescription="Add"
                 android:src="@drawable/ic_add_circle"
-                android:tint="#555555" />
+                app:tint="#555555" />
 
             <!-- Notifications -->
             <ImageButton
@@ -69,7 +69,7 @@
                 android:background="?attr/selectableItemBackgroundBorderless"
                 android:contentDescription="Notifications"
                 android:src="@drawable/ic_notifications"
-                android:tint="#555555" />
+                app:tint="#555555" />
 
             <!-- Logout -->
             <ImageButton
@@ -79,7 +79,7 @@
                 android:background="?attr/selectableItemBackgroundBorderless"
                 android:contentDescription="Logout"
                 android:src="@drawable/ic_logout"
-                android:tint="#555555" />
+                app:tint="#555555" />
         </LinearLayout>
 
         <!-- Main Content -->
@@ -207,7 +207,7 @@
                         android:background="@drawable/bg_settings_btn"
                         android:contentDescription="Settings"
                         android:src="@drawable/ic_settings"
-                        android:tint="#555555" />
+                        app:tint="#555555" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
@@ -428,7 +428,7 @@
                             android:layout_width="40dp"
                             android:layout_height="40dp"
                             android:src="@drawable/ic_person_placeholder"
-                            android:tint="#E53935"
+                            app:tint="#E53935"
                             android:layout_marginBottom="8dp"
                             android:contentDescription="My Profile" />
 
@@ -465,7 +465,7 @@
                             android:layout_width="40dp"
                             android:layout_height="40dp"
                             android:src="@drawable/ic_task"
-                            android:tint="#1976D2"
+                            app:tint="#1976D2"
                             android:layout_marginBottom="8dp"
                             android:contentDescription="My Tasks" />
 
@@ -502,7 +502,7 @@
                             android:layout_width="40dp"
                             android:layout_height="40dp"
                             android:src="@drawable/ic_folder"
-                            android:tint="#F57C00"
+                            app:tint="#F57C00"
                             android:layout_marginBottom="8dp"
                             android:contentDescription="Projects" />
 
@@ -539,7 +539,7 @@
                             android:layout_width="40dp"
                             android:layout_height="40dp"
                             android:src="@drawable/ic_support"
-                            android:tint="#7B1FA2"
+                            app:tint="#7B1FA2"
                             android:layout_marginBottom="8dp"
                             android:contentDescription="Tickets" />
 

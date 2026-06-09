@@ -24,7 +24,7 @@
             android:background="?attr/selectableItemBackgroundBorderless"
             android:contentDescription="Back"
             android:src="@drawable/ic_arrow_back"
-            android:tint="#FFFFFF" />
+            app:tint="#FFFFFF" />
 
         <LinearLayout
             android:layout_width="0dp"
@@ -70,7 +70,7 @@
                     android:layout_height="match_parent"
                     android:scaleType="centerCrop"
                     android:src="@drawable/ic_person_placeholder"
-                    android:tint="#BBBBBB"
+                    app:tint="#BBBBBB"
                     android:contentDescription="Profile photo" />
 
                 <!-- Gradient overlay at bottom -->

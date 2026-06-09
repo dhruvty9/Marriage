@@ -147,7 +147,7 @@
                             android:layout_height="60dp"
                             android:layout_gravity="center"
                             android:src="@drawable/ic_person_placeholder"
-                            android:tint="#8B0000"
+                            app:tint="#8B0000"
                             android:contentDescription="Face" />
                     </FrameLayout>
 

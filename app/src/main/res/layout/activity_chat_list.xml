@@ -414,25 +414,25 @@
 
         <LinearLayout android:id="@+id/navHome" android:layout_width="0dp" android:layout_height="match_parent"
             android:layout_weight="1" android:gravity="center" android:orientation="vertical">
-            <ImageView android:layout_width="22dp" android:layout_height="22dp" android:src="@drawable/ic_login" android:tint="#FFCCCC" android:contentDescription="Home" />
+            <ImageView android:layout_width="22dp" android:layout_height="22dp" android:src="@drawable/ic_login" app:tint="#FFCCCC" android:contentDescription="Home" />
             <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Home" android:textColor="#FFCCCC" android:textSize="10sp" />
         </LinearLayout>
 
         <LinearLayout android:id="@+id/navMatches" android:layout_width="0dp" android:layout_height="match_parent"
             android:layout_weight="1" android:gravity="center" android:orientation="vertical">
-            <ImageView android:layout_width="22dp" android:layout_height="22dp" android:src="@drawable/ic_person_placeholder" android:tint="#FFCCCC" android:contentDescription="Matches" />
+            <ImageView android:layout_width="22dp" android:layout_height="22dp" android:src="@drawable/ic_person_placeholder" app:tint="#FFCCCC" android:contentDescription="Matches" />
             <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Matches" android:textColor="#FFCCCC" android:textSize="10sp" />
         </LinearLayout>
 
         <LinearLayout android:id="@+id/navChat" android:layout_width="0dp" android:layout_height="match_parent"
             android:layout_weight="1" android:gravity="center" android:orientation="vertical">
-            <ImageView android:layout_width="22dp" android:layout_height="22dp" android:src="@drawable/ic_support" android:tint="#FFFFFF" android:contentDescription="Chat" />
+            <ImageView android:layout_width="22dp" android:layout_height="22dp" android:src="@drawable/ic_support" app:tint="#FFFFFF" android:contentDescription="Chat" />
             <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Chat" android:textColor="#FFFFFF" android:textSize="10sp" android:textStyle="bold" />
         </LinearLayout>
 
         <LinearLayout android:id="@+id/navProfile" android:layout_width="0dp" android:layout_height="match_parent"
             android:layout_weight="1" android:gravity="center" android:orientation="vertical">
-            <ImageView android:layout_width="22dp" android:layout_height="22dp" android:src="@drawable/ic_person_placeholder" android:tint="#FFCCCC" android:contentDescription="Profile" />
+            <ImageView android:layout_width="22dp" android:layout_height="22dp" android:src="@drawable/ic_person_placeholder" app:tint="#FFCCCC" android:contentDescription="Profile" />
             <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Profile" android:textColor="#FFCCCC" android:textSize="10sp" />
         </LinearLayout>
     </LinearLayout>
