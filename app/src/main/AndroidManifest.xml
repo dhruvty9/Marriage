@@ -4,6 +4,26 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
+    
+    <!-- Required for Firebase Cloud Messaging on Android 13+ -->
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
+    <!-- Required for browser-based Auth flows on Android 11+ -->
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.VIEW" />
+            <category android:name="android.intent.category.BROWSABLE" />
+            <data android:scheme="http" />
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW" />
+            <category android:name="android.intent.category.BROWSABLE" />
+            <data android:scheme="https" />
+        </intent>
+    </queries>
 
     <application
         android:allowBackup="true"
@@ -15,53 +35,90 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Marriage"
         android:usesCleartextTraffic="true">
+        
         <activity
-            android:name=".BasicActivity"
-            android:exported="false">
-        </activity>
+            android:name="com.digitalinappraigar.app.BasicActivity"
+            android:exported="false" />
+            
         <activity
-            android:name=".LoginActivity"
+            android:name="com.digitalinappraigar.app.SplashActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".SignupActivity"
+        
+        <activity
+            android:name="com.digitalinappraigar.app.LoginActivity"
             android:exported="false" />
-        <activity android:name=".PersonalDetailsActivity"
+            
+        <activity
+            android:name="com.digitalinappraigar.app.Onboarding1Activity"
             android:exported="false" />
-        <activity android:name=".AboutYourselfActivity"
+            
+        <activity
+            android:name="com.digitalinappraigar.app.Onboarding2Activity"
+            android:exported="false" />
+            
+        <activity
+            android:name="com.digitalinappraigar.app.Onboarding3Activity"
+            android:exported="false" />
+            
+        <activity 
+            android:name="com.digitalinappraigar.app.SignupActivity"
+            android:exported="false" />
+            
+        <activity 
+            android:name="com.digitalinappraigar.app.PersonalDetailsActivity"
+            android:exported="false" />
+            
+        <activity 
+            android:name="com.digitalinappraigar.app.AboutYourselfActivity"
             android:exported="false" />
 
-        <activity android:name=".ReligionDetailsActivity"
+        <activity 
+            android:name="com.digitalinappraigar.app.ReligionDetailsActivity"
             android:exported="false" />
+            
         <activity
-            android:name=".ProfessionalDetailsActivity"
+            android:name="com.digitalinappraigar.app.ProfessionalDetailsActivity"
             android:exported="false" />
+            
         <activity
-            android:name=".DashboardActivity"
+            android:name="com.digitalinappraigar.app.DashboardActivity"
             android:exported="false" />
+            
         <activity
-            android:name=".RegisterSuccessActivity"
+            android:name="com.digitalinappraigar.app.RegisterSuccessActivity"
             android:exported="false" />
+            
         <activity
-            android:name=".SuccessActivity"
+            android:name="com.digitalinappraigar.app.SuccessActivity"
             android:exported="false" />
+            
         <activity
-            android:name=".HomeActivity"
+            android:name="com.digitalinappraigar.app.HomeActivity"
             android:exported="false" />
+            
         <activity
-            android:name=".MatchesActivity"
+            android:name="com.digitalinappraigar.app.MatchesActivity"
             android:exported="false" />
+            
         <activity
-            android:name=".MatchDetailActivity"
+            android:name="com.digitalinappraigar.app.MatchDetailActivity"
             android:exported="false" />
+            
         <activity
-            android:name=".ChatListActivity"
+            android:name="com.digitalinappraigar.app.ChatListActivity"
             android:exported="false" />
+            
         <activity
-            android:name=".ChatActivity"
+            android:name="com.digitalinappraigar.app.ChatActivity"
+            android:exported="false" />
+            
+        <activity
+            android:name="com.digitalinappraigar.app.ProfileActivity"
             android:exported="false" />
 
     </application>

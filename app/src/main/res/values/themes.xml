@@ -3,8 +3,9 @@
     <style name="Base.Theme.Marriage" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Main colors -->
         <item name="colorPrimary">@color/dark_red</item>
-        <item name="colorPrimaryDark">@color/dark_red</item>
-        <item name="colorAccent">@color/dark_red</item>
+        <item name="colorPrimaryDark">#8B0000</item>
+        <item name="colorAccent">#8B0000</item>
+        <item name="android:statusBarColor">#8B0000</item>
     </style>
 
     <style name="Theme.Marriage" parent="Base.Theme.Marriage" />

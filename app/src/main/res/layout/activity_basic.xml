@@ -137,11 +137,28 @@
 
             <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Gender:" android:textColor="#333333" android:textStyle="bold" />
             <RadioGroup
+                android:id="@+id/radioGroupGender"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
-                <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Male" android:textColor="#333333" android:textStyle="bold" android:buttonTint="#8B0000" android:layout_weight="1"/>
-                <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Female" android:textColor="#333333" android:textStyle="bold" android:buttonTint="#8B0000" android:layout_weight="1"/>
+                <RadioButton
+                    android:id="@+id/radioMale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Male"
+                    android:textColor="#333333"
+                    android:textStyle="bold"
+                    android:buttonTint="#8B0000"
+                    android:layout_weight="1"/>
+                <RadioButton
+                    android:id="@+id/radioFemale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Female"
+                    android:textColor="#333333"
+                    android:textStyle="bold"
+                    android:buttonTint="#8B0000"
+                    android:layout_weight="1"/>
             </RadioGroup>
 
         </LinearLayout>

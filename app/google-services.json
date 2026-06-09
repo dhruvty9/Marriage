@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1095280272144",
+    "project_id": "raigarvivah-1a6f7",
+    "storage_bucket": "raigarvivah-1a6f7.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1095280272144:android:f3678015ab8593f5a1fb95",
+        "android_client_info": {
+          "package_name": "com.digitalinappraigar.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1095280272144-ne76pqdl1dch02iefuv091604f4rsjvp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.digitalinappraigar.app",
+            "certificate_hash": "ea6b88866cf78f96dad87f4eadbd0e34775066ba"
+          }
+        },
+        {
+          "client_id": "1095280272144-9dr0ug032jdl3nv9t9tfcrid606lg47u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBWEeZYhbKDzWQYbgFaBAFVap5IjtzM2yU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1095280272144-9dr0ug032jdl3nv9t9tfcrid606lg47u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

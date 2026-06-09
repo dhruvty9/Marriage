@@ -136,9 +136,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
-                <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Yes" android:textColor="#333333" android:textStyle="bold" android:buttonTint="#8B0000" android:layout_weight="1"/>
-                <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="No" android:textColor="#333333" android:textStyle="bold" android:buttonTint="#8B0000" android:layout_weight="1"/>
-                <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Don't Know" android:textColor="#333333" android:textStyle="bold" android:buttonTint="#8B0000" android:layout_weight="1"/>
+                <RadioButton android:id="@+id/radioYes" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Yes" android:textColor="#333333" android:textStyle="bold" android:buttonTint="#8B0000" android:layout_weight="1"/>
+                <RadioButton android:id="@+id/radioNo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="No" android:textColor="#333333" android:textStyle="bold" android:buttonTint="#8B0000" android:layout_weight="1"/>
+                <RadioButton android:id="@+id/radioDontKnow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Don't Know" android:textColor="#333333" android:textStyle="bold" android:buttonTint="#8B0000" android:layout_weight="1"/>
             </RadioGroup>
 
         </LinearLayout>
