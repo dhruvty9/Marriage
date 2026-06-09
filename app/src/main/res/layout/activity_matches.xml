@@ -48,7 +48,7 @@
             android:background="?attr/selectableItemBackgroundBorderless"
             android:contentDescription="Filter"
             android:src="@drawable/ic_settings"
-            android:tint="#FFFFFF" />
+            app:tint="#FFFFFF" />
     </LinearLayout>
 
     <!-- Tab Row: Filters | Match Preference | Basic Me -->
@@ -137,7 +137,7 @@
                             android:layout_height="match_parent"
                             android:scaleType="centerCrop"
                             android:src="@drawable/ic_person_placeholder"
-                            android:tint="#BBBBBB"
+                            app:tint="#BBBBBB"
                             android:contentDescription="Match photo" />
 
                         <!-- Last seen badge -->
@@ -290,7 +290,7 @@
                 android:layout_width="22dp"
                 android:layout_height="22dp"
                 android:src="@drawable/ic_login"
-                android:tint="#FFCCCC"
+                app:tint="#FFCCCC"
                 android:contentDescription="Home" />
 
             <TextView
@@ -313,7 +313,7 @@
                 android:layout_width="22dp"
                 android:layout_height="22dp"
                 android:src="@drawable/ic_person_placeholder"
-                android:tint="#FFFFFF"
+                app:tint="#FFFFFF"
                 android:contentDescription="Matches" />
 
             <TextView
@@ -337,7 +337,7 @@
                 android:layout_width="22dp"
                 android:layout_height="22dp"
                 android:src="@drawable/ic_support"
-                android:tint="#FFCCCC"
+                app:tint="#FFCCCC"
                 android:contentDescription="Chat" />
 
             <TextView
@@ -360,7 +360,7 @@
                 android:layout_width="22dp"
                 android:layout_height="22dp"
                 android:src="@drawable/ic_person_placeholder"
-                android:tint="#FFCCCC"
+                app:tint="#FFCCCC"
                 android:contentDescription="Profile" />
 
             <TextView

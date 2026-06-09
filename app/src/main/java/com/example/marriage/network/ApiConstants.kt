@@ -1,9 +1,8 @@
 package com.example.marriage.network
 
 object ApiConstants {
-    // ADB reverse port forwarding — works on physical device via USB
-    // No IP needed — phone's localhost:3000 maps to PC's localhost:3000
-    const val BASE_URL = "http://localhost:3000/"
+    // Physical devices must use the development machine's LAN IP address.
+    const val BASE_URL = "http://192.168.29.73:3000/"
 
     // Auth
     const val REGISTER        = "api/auth/register"
