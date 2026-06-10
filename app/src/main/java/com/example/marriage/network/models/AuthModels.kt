@@ -37,7 +37,8 @@ data class AuthResponse(
     @SerializedName("message")      val message: String?,
     @SerializedName("accessToken")  val accessToken: String?,
     @SerializedName("refreshToken") val refreshToken: String?,
-    @SerializedName("user")         val user: UserData?
+    @SerializedName("user")         val user: UserData?,
+    @SerializedName("data")         val data: UserData?
 )
 
 data class UserData(
@@ -46,12 +47,29 @@ data class UserData(
     @SerializedName("mobileNumber") val mobileNumber: String,
     @SerializedName("profile")      val profile: String?,
     @SerializedName("profilePhoto") val profilePhoto: ProfilePhoto?,
+    @SerializedName("religionDetails") val religionDetails: ReligionDetails?,
+    @SerializedName("personalDetails") val personalDetails: PersonalDetailsData?,
     @SerializedName("basicInformation") val basicInformation: BasicInformation?,
     @SerializedName("locationDetails")  val locationDetails: LocationDetails?,
     @SerializedName("professionalDetails") val professionalDetails: ProfessionalDetails?,
     @SerializedName("aboutSection")     val aboutSection: AboutSection?,
     @SerializedName("profileStatus")    val profileStatus: String?,
     @SerializedName("profileCompletedSteps") val profileCompletedSteps: Int?
+)
+
+data class PersonalDetailsData(
+    @SerializedName("maritalStatus") val maritalStatus: String?,
+    @SerializedName("noOfChildren") val noOfChildren: Int?,
+    @SerializedName("childrenLivingWithYou") val childrenLivingWithYou: Boolean?,
+    @SerializedName("height") val height: String?,
+    @SerializedName("familyStatus") val familyStatus: String?,
+    @SerializedName("familyType") val familyType: String?
+)
+
+data class ReligionDetails(
+    @SerializedName("caste")    val caste: String?,
+    @SerializedName("subCaste") val subCaste: String?,
+    @SerializedName("dosham")   val dosham: String?
 )
 
 data class ProfilePhoto(

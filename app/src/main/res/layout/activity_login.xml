@@ -109,6 +109,7 @@
             android:textColor="#000000"
             android:textSize="14sp"
             android:layout_marginTop="24dp"
+            android:visibility="gone"
             app:layout_constraintTop_toBottomOf="@id/etPhone"
             app:layout_constraintStart_toStartOf="parent" />
 
@@ -118,12 +119,12 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:layout_marginTop="8dp"
+            android:visibility="gone"
             app:layout_constraintTop_toBottomOf="@id/tvOtpLabel"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             android:weightSum="6">
 
-            <!-- Added IDs and Black text color to all OTP boxes -->
             <EditText
                 android:id="@+id/otp1"
                 android:layout_width="0dp"
@@ -215,7 +216,7 @@
             android:layout_marginStart="32dp"
             android:layout_marginEnd="32dp"
             android:background="@drawable/bg_red_pill"
-            android:text="Login"
+            android:text="Send OTP"
             android:textAllCaps="false"
             android:textColor="#FFFFFF"
             android:textSize="18sp"
@@ -224,7 +225,6 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/llOtpContainer" />
 
-        <!-- Replacing Register Button with Text Link -->
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

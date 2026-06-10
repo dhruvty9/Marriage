@@ -6,6 +6,7 @@
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
+        android:name=".MarriageApp"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
@@ -16,17 +17,21 @@
         android:theme="@style/Theme.Marriage"
         android:usesCleartextTraffic="true">
         <activity
-            android:name=".BasicActivity"
-            android:exported="false">
-        </activity>
-        <activity
-            android:name=".LoginActivity"
-            android:exported="true">
+            android:name=".SplashActivity"
+            android:exported="true"
+            android:theme="@style/Theme.Marriage.Splash">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".BasicActivity"
+            android:exported="false">
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
         <activity android:name=".SignupActivity"
             android:exported="false" />
         <activity android:name=".PersonalDetailsActivity"
@@ -39,9 +44,7 @@
         <activity
             android:name=".ProfessionalDetailsActivity"
             android:exported="false" />
-        <activity
-            android:name=".DashboardActivity"
-            android:exported="false" />
+
         <activity
             android:name=".RegisterSuccessActivity"
             android:exported="false" />

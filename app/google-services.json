@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "255437044978",
+    "project_id": "raigarvivah-84875",
+    "storage_bucket": "raigarvivah-84875.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:255437044978:android:f499340718dcaaa8f0e46b",
+        "android_client_info": {
+          "package_name": "com.example.marriage"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "255437044978-krhvdkgoilskq969787co157pc8kf020.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.marriage",
+            "certificate_hash": "e6c0634a7e6610e5c8d6dac6e5a1cb2ce405cdac"
+          }
+        },
+        {
+          "client_id": "255437044978-0ed2pbt4mdptk444v6vo27047ltc95el.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAMuuA6BVhCaVKdvbkPcMRxgMHVSiVDZz8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "255437044978-0ed2pbt4mdptk444v6vo27047ltc95el.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

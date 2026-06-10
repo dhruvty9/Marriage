@@ -22,7 +22,8 @@ data class MatchProfile(
 )
 
 data class AboutSection(
-    @SerializedName("bio") val bio: String?
+    @SerializedName("aboutMe") val aboutMe: String? = null,
+    @SerializedName("bio") val bio: String? = null
 )
 
 data class AstroDetails(

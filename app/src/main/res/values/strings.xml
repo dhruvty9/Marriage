@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Marriage</string>
+    <string name="splash_screen_content_description">Rangar Vivah splash screen</string>
 </resources>

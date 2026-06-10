@@ -3,35 +3,65 @@ package com.example.marriage
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
+import android.widget.ImageButton
 import android.widget.LinearLayout
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.cardview.widget.CardView
+import androidx.core.view.GravityCompat
+import androidx.drawerlayout.widget.DrawerLayout
 import androidx.lifecycle.lifecycleScope
 import com.bumptech.glide.Glide
 import com.example.marriage.network.RetrofitClient
 import com.example.marriage.network.models.MatchProfile
 import com.example.marriage.utils.SessionManager
+import com.google.android.material.navigation.NavigationView
 import kotlinx.coroutines.launch
 
 class HomeActivity : AppCompatActivity() {
 
     private lateinit var sessionManager: SessionManager
+    private lateinit var drawerLayout: DrawerLayout
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
 
         sessionManager = SessionManager(this)
+        drawerLayout = findViewById(R.id.drawerLayout)
 
         // Set user name in header
         val tvUserName = findViewById<TextView>(R.id.tvUserName)
         tvUserName.text = "${sessionManager.getUserName() ?: "User"}!"
 
+        setupMenu()
         setupFilterChips()
         loadRecommendations()
         setupBottomNav()
+    }
+
+    private fun setupMenu() {
+        val btnMenu = findViewById<ImageButton>(R.id.btnMenu)
+        btnMenu.setOnClickListener {
+            drawerLayout.openDrawer(GravityCompat.END)
+        }
+
+        val navigationView = findViewById<NavigationView>(R.id.navigationView)
+        navigationView.setNavigationItemSelectedListener { menuItem ->
+            when (menuItem.itemId) {
+                R.id.nav_logout -> {
+                    sessionManager.clearSession()
+                    val intent = Intent(this, LoginActivity::class.java)
+                    intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
+                    startActivity(intent)
+                    finish()
+                }
+                // Add other menu items here
+            }
+            drawerLayout.closeDrawer(GravityCompat.END)
+            true
+        }
     }
 
     private fun setupFilterChips() {
@@ -68,7 +98,6 @@ class HomeActivity : AppCompatActivity() {
                     bindRecommendedCards(profiles.take(3))
                     bindNearbyCards(profiles.drop(3).take(2))
                 } else {
-                    // Show static cards if API fails
                     setupStaticCards()
                 }
             } catch (e: Exception) {
@@ -85,7 +114,6 @@ class HomeActivity : AppCompatActivity() {
                 card.setOnClickListener { openMatchDetail(profile) }
             }
         }
-        // If fewer than 3 profiles, still set up static fallback for remaining
         if (profiles.size < 3) setupStaticCards()
     }
 
@@ -100,7 +128,6 @@ class HomeActivity : AppCompatActivity() {
     }
 
     private fun setupStaticCards() {
-        // Fallback static navigation when no API data
         val staticData = listOf(
             Triple(R.id.cardRec1, "Srivalli", "Software Engg."),
             Triple(R.id.cardRec2, "Ramya Varma", "Doctor"),

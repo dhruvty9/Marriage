@@ -37,10 +37,28 @@ interface ApiService {
         @Body body: Map<String, @JvmSuppressWildcards Any>
     ): Response<ApiResponse>
 
+    @PUT("api/basic-details/update")
+    suspend fun updateBasicDetails(
+        @Header("Authorization") token: String,
+        @Body body: Map<String, @JvmSuppressWildcards Any>
+    ): Response<ApiResponse>
+
+    @PUT("api/religion-details/update")
+    suspend fun updateReligionDetails(
+        @Header("Authorization") token: String,
+        @Body body: Map<String, @JvmSuppressWildcards Any>
+    ): Response<ApiResponse>
+
+    @PUT("api/personal-details/update")
+    suspend fun updatePersonalDetails(
+        @Header("Authorization") token: String,
+        @Body body: Map<String, @JvmSuppressWildcards Any>
+    ): Response<ApiResponse>
+
     @GET("api/registration/status")
     suspend fun getRegistrationStatus(
         @Header("Authorization") token: String
-    ): Response<ApiResponse>
+    ): Response<AuthResponse> // Fixed to AuthResponse
 
     // ── PROFILE ───────────────────────────────────────────────
 
